@@ -41,6 +41,8 @@ $app->pipe(ImplicitHeadMiddleware::class);
 $app->pipe(ImplicitOptionsMiddleware::class);
 $app->pipe(UrlHelperMiddleware::class);
 
+$app->pipe(\App\Action\BootstrapAction::class);
+
 // Add more middleware here that needs to introspect the routing results; this
 // might include:
 //
