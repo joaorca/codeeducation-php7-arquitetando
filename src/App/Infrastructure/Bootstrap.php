@@ -11,6 +11,6 @@ class Bootstrap implements BootstrapInterface
 
     public function create()
     {
-
+        require 'config/doctrine.php';
     }
 }
