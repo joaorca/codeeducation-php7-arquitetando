@@ -19,10 +19,10 @@ return [
         ],
         'driver' => [
             'App_driver' => [
-                'class' => \Doctrine\ORM\Mapping\Driver\AnnotationDriver::class,
+                'class' => Doctrine\ORM\Mapping\Driver\YamlDriver::class,
                 'cache' => 'array',
                 'paths' => [
-                    __DIR__ . '/../../src/App/Domain/Entity',
+                    __DIR__ . '/../../src/App/Infrastructure/Persistence/Doctrine/ORM',
                 ]
             ],
             'orm_default' => [
