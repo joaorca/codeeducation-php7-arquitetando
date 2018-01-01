@@ -1,17 +1,17 @@
 <?php
 
 
-namespace App\Action;
+namespace App\Application\Action;
 
 
-use App\Entity\Category;
+use App\Domain\Entity\Category;
 use Doctrine\ORM\EntityManager;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Diactoros\Response\HtmlResponse;
 use Zend\Expressive\Template\TemplateRendererInterface;
 
-class TestAction
+class TesteAction
 {
 
     /**
@@ -39,7 +39,7 @@ class TestAction
         */
 
         $categories = $this->manager->getRepository(Category::class)->findAll();
-
+        var_dump($categories);
 
         return new HtmlResponse("Teste Action");
     }

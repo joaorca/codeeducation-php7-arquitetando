@@ -2,8 +2,8 @@
 
 namespace AppTest\Action;
 
-use App\Action\HomePageAction;
-use App\Action\HomePageFactory;
+use App\Application\Action\HomePageAction;
+use App\Application\Action\HomePageFactory;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
 use Zend\Expressive\Router\RouterInterface;

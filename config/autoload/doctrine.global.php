@@ -22,12 +22,12 @@ return [
                 'class' => \Doctrine\ORM\Mapping\Driver\AnnotationDriver::class,
                 'cache' => 'array',
                 'paths' => [
-                    __DIR__ . '/../../src/App/Entity',
+                    __DIR__ . '/../../src/App/Domain/Entity',
                 ]
             ],
             'orm_default' => [
                 'drivers' => [
-                    'App\Entity' => 'App_driver'
+                    'App\Domain\Entity' => 'App_driver'
                 ]
             ]
         ]

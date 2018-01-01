@@ -13,19 +13,21 @@ $cacheConfig = [
 ];
 
 $aggregator = new ConfigAggregator([
-    \Zend\Cache\ConfigProvider::class,
-    \Zend\Paginator\ConfigProvider::class,
-    \Zend\Form\ConfigProvider::class,
-    \Zend\InputFilter\ConfigProvider::class,
-    \Zend\Filter\ConfigProvider::class,
-    \Zend\Hydrator\ConfigProvider::class,
-    \Zend\Router\ConfigProvider::class,
-    \Zend\Validator\ConfigProvider::class,
+
     // Include cache configuration
     new ArrayProvider($cacheConfig),
 
     // Default App module config
     App\ConfigProvider::class,
+
+    Zend\Cache\ConfigProvider::class,
+    Zend\Paginator\ConfigProvider::class,
+    Zend\Form\ConfigProvider::class,
+    Zend\InputFilter\ConfigProvider::class,
+    Zend\Filter\ConfigProvider::class,
+    Zend\Hydrator\ConfigProvider::class,
+    Zend\Router\ConfigProvider::class,
+    Zend\Validator\ConfigProvider::class,
 
     // Load application config in a pre-defined order in such a way that local settings
     // overwrite global settings. (Loaded as first to last):

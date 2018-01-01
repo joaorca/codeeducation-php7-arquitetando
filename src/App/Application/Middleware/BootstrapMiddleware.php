@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Action;
+namespace App\Application\Middleware;
 
 
-use App\Service\BootstrapInterface;
+use App\Domain\Service\BootstrapInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-class BootstrapAction
+class BootstrapMiddleware
 {
 
     private $bootstrap;

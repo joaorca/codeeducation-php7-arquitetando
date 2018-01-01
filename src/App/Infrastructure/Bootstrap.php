@@ -4,7 +4,7 @@
 namespace App\Infrastructure;
 
 
-use App\Service\BootstrapInterface;
+use App\Domain\Service\BootstrapInterface;
 
 class Bootstrap implements BootstrapInterface
 {

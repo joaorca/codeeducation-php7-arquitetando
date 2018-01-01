@@ -1,9 +1,10 @@
 <?php
 
 
-namespace App\Action;
+namespace App\Application\Action;
 
 
+use App\Application\Action\TesteAction;
 use Doctrine\ORM\EntityManager;
 use Psr\Container\ContainerInterface;
 use Zend\Expressive\Template\TemplateRendererInterface;
@@ -17,7 +18,7 @@ class TestFactory
                 ? $container->get(TemplateRendererInterface::class)
                 : null;
 
-        return new TestAction($container->get(EntityManager::class), $template);
+        return new TesteAction($container->get(EntityManager::class), $template);
     }
 
 }

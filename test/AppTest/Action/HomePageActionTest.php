@@ -2,7 +2,7 @@
 
 namespace AppTest\Action;
 
-use App\Action\HomePageAction;
+use App\Application\Action\HomePageAction;
 use Interop\Http\ServerMiddleware\DelegateInterface;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
