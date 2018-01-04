@@ -1,6 +1,7 @@
 #App.Domain.Entity.Customer.dcm.yml
 App\Domain\Entity\Customer:
   type: entity
+  repositoryClass: App\Infrastructure\Persistence\Doctrine\Repository\CustomerRepository
   table: customers
   id:
     id:
