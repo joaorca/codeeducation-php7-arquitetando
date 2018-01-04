@@ -4,8 +4,7 @@
 namespace App\Application\Action;
 
 
-use App\Application\Action\TesteAction;
-use Doctrine\ORM\EntityManager;
+use App\Domain\Persistence\CustomerRepositoryInterface;
 use Psr\Container\ContainerInterface;
 use Zend\Expressive\Template\TemplateRendererInterface;
 
@@ -18,7 +17,7 @@ class TestFactory
                 ? $container->get(TemplateRendererInterface::class)
                 : null;
 
-        return new TesteAction($container->get(EntityManager::class), $template);
+        return new TesteAction($container->get(CustomerRepositoryInterface::class), $template);
     }
 
 }

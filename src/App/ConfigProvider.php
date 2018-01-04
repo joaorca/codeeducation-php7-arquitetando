@@ -2,6 +2,7 @@
 
 namespace App;
 
+
 /**
  * The configuration provider for the App module
  *
@@ -39,7 +40,8 @@ class ConfigProvider
             'factories'  => [
                 Application\Action\HomePageAction::class => Application\Action\HomePageFactory::class,
                 Application\Action\TesteAction::class => Application\Action\TestFactory::class,
-                Application\Middleware\BootstrapMiddleware::class => Application\Middleware\BootstrapFactory::class
+                Application\Middleware\BootstrapMiddleware::class => Application\Middleware\BootstrapFactory::class,
+                Domain\Persistence\CustomerRepositoryInterface::class => Infrastructure\Persistence\Doctrine\Repository\CustomerRepositoryFactory::class
             ],
         ];
     }
