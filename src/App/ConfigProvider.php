@@ -3,6 +3,7 @@
 namespace App;
 
 
+
 /**
  * The configuration provider for the App module
  *
@@ -42,6 +43,7 @@ class ConfigProvider
                 Application\Action\TesteAction::class => Application\Action\TestFactory::class,
                 Application\Middleware\BootstrapMiddleware::class => Application\Middleware\BootstrapFactory::class,
                 Domain\Persistence\CustomerRepositoryInterface::class => Infrastructure\Persistence\Doctrine\Repository\CustomerRepositoryFactory::class,
+                Infrastructure\Service\FlashMessage::class => Infrastructure\Service\FlashMessageFactory::class,
                 Application\Action\Customer\CustormerListAction::class => Application\Action\Customer\Factory\CustomerListFactory::class,
                 Application\Action\Customer\CustomerCreateAction::class => Application\Action\Customer\Factory\CustomerCreateFactory::class,
             ],
