@@ -45,6 +45,7 @@ class ConfigProvider
                 Domain\Persistence\CustomerRepositoryInterface::class => Infrastructure\Persistence\Doctrine\Repository\CustomerRepositoryFactory::class,
                 Application\Action\Customer\CustormerListAction::class => Application\Action\Customer\Factory\CustomerListFactory::class,
                 Application\Action\Customer\CustomerCreateAction::class => Application\Action\Customer\Factory\CustomerCreateFactory::class,
+                Application\Action\Customer\CustomerUpdateAction::class => Application\Action\Customer\Factory\CustomerUpdateFactory::class,
                 Domain\Service\FlashMessageInterface::class => Infrastructure\Service\FlashMessageFactory::class,
             ],
         ];
