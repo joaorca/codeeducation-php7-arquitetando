@@ -1,9 +1,10 @@
 <?php
 
 
-namespace App\Application\Action\Customer;
+namespace App\Application\Action\Customer\Factory;
 
 
+use App\Application\Action\Customer\CustomerCreateAction;
 use App\Domain\Persistence\CustomerRepositoryInterface;
 use Psr\Container\ContainerInterface;
 use Zend\Expressive\Template\TemplateRendererInterface;
