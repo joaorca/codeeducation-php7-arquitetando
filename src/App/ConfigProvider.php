@@ -43,6 +43,7 @@ class ConfigProvider
                 Application\Middleware\BootstrapMiddleware::class => Application\Middleware\BootstrapFactory::class,
                 Domain\Persistence\CustomerRepositoryInterface::class => Infrastructure\Persistence\Doctrine\Repository\CustomerRepositoryFactory::class,
                 Application\Action\Customer\CustormerListAction::class => Application\Action\Customer\CustomerListFactory::class,
+                Application\Action\Customer\CustomerCreateAction::class => Application\Action\Customer\CustomerCreateFactory::class,
             ],
         ];
     }

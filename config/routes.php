@@ -34,3 +34,5 @@ $app->get('/teste', \App\Application\Action\TesteAction::class, 'teste');
 
 
 $app->get('/customer', \App\Application\Action\Customer\CustormerListAction::class, 'customer.list');
+$app->route('/customer/create', \App\Application\Action\Customer\CustomerCreateAction::class, ['GET', 'POST'],
+    'customer.create');
