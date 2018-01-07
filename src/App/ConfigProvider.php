@@ -41,7 +41,8 @@ class ConfigProvider
                 Application\Action\HomePageAction::class => Application\Action\HomePageFactory::class,
                 Application\Action\TesteAction::class => Application\Action\TestFactory::class,
                 Application\Middleware\BootstrapMiddleware::class => Application\Middleware\BootstrapFactory::class,
-                Domain\Persistence\CustomerRepositoryInterface::class => Infrastructure\Persistence\Doctrine\Repository\CustomerRepositoryFactory::class
+                Domain\Persistence\CustomerRepositoryInterface::class => Infrastructure\Persistence\Doctrine\Repository\CustomerRepositoryFactory::class,
+                Application\Action\Customer\CustormerListAction::class => Application\Action\Customer\CustomerListFactory::class,
             ],
         ];
     }

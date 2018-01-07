@@ -31,3 +31,6 @@
 $app->get('/', App\Application\Action\HomePageAction::class, 'home');
 $app->get('/api/ping', App\Application\Action\PingAction::class, 'api.ping');
 $app->get('/teste', \App\Application\Action\TesteAction::class, 'teste');
+
+
+$app->get('/customer', \App\Application\Action\Customer\CustormerListAction::class, 'customer.list');

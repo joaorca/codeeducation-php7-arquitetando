@@ -1,0 +1,12 @@
+{% extends '@layout/default.html.twig' %}
+
+{% block title %}Customer{% endblock %}
+
+{% block content %}
+    Customers
+    <ul>
+    {% for customer in customerList%}
+    <li>{{ customer.name }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
