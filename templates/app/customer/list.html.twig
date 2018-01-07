@@ -12,24 +12,31 @@
 {% block content %}
     <div class="row">
         <div class="box">
-            <table class="table table-bordered">
-                <thead>
+            <div class="box-header">
+                <a class="btn btn-app" href="{{ url("customer.create") }}">
+                    <i class="fa fa-plus-circle"></i> Novo
+                </a>
+            </div>
+            <div class="box-body">
+                <table class="table table-bordered">
+                    <thead>
                     <tr>
                         <th style="width: 10px">#</th>
                         <th>Nome</th>
                         <th>Email</th>
                     </tr>
-                </thead>
-                <tbody>
-                {% for customer in customerList%}
-                    <tr>
-                        <td>{{ customer.id }}</td>
-                        <td>{{ customer.name }}</td>
-                        <td>{{ customer.email }}</td>
-                    </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    {% for customer in customerList %}
+                        <tr>
+                            <td>{{ customer.id }}</td>
+                            <td>{{ customer.name }}</td>
+                            <td>{{ customer.email }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
