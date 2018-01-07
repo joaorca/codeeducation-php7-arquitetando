@@ -27,6 +27,11 @@ class CustomerRepository extends EntityRepository implements CustomerRepositoryI
         return $entity;
     }
 
+    public function find($id, $lockMode = null, $lockVersion = null)
+    {
+        return parent::find($id, $lockMode, $lockVersion);
+    }
+
     public function remove($entity)
     {
         // TODO: Implement remove() method.
